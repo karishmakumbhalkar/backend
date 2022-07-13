@@ -11,7 +11,8 @@ const PORT = process.env.PORT || 5000;
 // temp database
 let tasks = [];
 
-const DB = "MY Database";
+const DB = process.env.MONGODB_URI;
+console.log(DB)
 
 
 //create a task
